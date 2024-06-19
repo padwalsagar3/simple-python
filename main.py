@@ -1,9 +1,10 @@
 # main.py
 from helper import greet
-from math_operations import add, subtract
+from math import add, subtract
+name = input("Enter the name: ").strip()
 
 def main():
-    print(greet("Alice"))
+    print(greet(name))
     print("3 + 5 =", add(3, 5))
     print("10 - 4 =", subtract(10, 4))
 
